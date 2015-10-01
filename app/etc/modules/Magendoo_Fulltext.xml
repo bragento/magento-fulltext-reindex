@@ -5,7 +5,7 @@
             <active>true</active>
             <codePool>local</codePool>
             <depends>
-            	<Mage_CatalogSearch />
+                <Mage_CatalogSearch/>
             </depends>
         </Magendoo_Fulltext>
     </modules>
