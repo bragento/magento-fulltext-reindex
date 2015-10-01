@@ -3,9 +3,8 @@
 /**
  * CatalogSearch fulltext indexer model
  *
- * @category    Mage
- * @package     Mage_CatalogSearch
- * @author      Magento Core Team <core@magentocommerce.com>
+ * @category    Magendoo
+ * @package     Magendoo_Fulltext
  */
 class Magendoo_Fulltext_Model_Indexer_Fulltext extends Mage_CatalogSearch_Model_Indexer_Fulltext
 {

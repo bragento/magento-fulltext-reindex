@@ -1,0 +1,7 @@
+{
+  "name": "magendoo/fulltext",
+  "license": "proprietary",
+  "type": "magento-module",
+  "description": "Magendoo fulltext",
+  "require": {}
+}

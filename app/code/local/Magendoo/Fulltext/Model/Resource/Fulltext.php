@@ -1,12 +1,10 @@
 <?php
 
-
 /**
  * CatalogSearch Fulltext Index into temporary table resource model
  *
  * @category    Magendoo
- * @package     Magendoo_CatalogSearch
- * @author      Emil [carco] Sirbu <emil.sirbu@gmail.com>
+ * @package     Magendoo_Fulltext
  */
 class Magendoo_Fulltext_Model_Resource_Fulltext extends Mage_CatalogSearch_Model_Resource_Fulltext
 {
@@ -28,8 +26,6 @@ class Magendoo_Fulltext_Model_Resource_Fulltext extends Mage_CatalogSearch_Model
     /**
      * Regenerate search index for store(s)
      *
-     * @param  int|null $storeId
-     * @param  int|array|null $productIds
      * @return Magendoo_Fulltext_Model_Resource_Fulltext
      */
     public function rebuildAllIndexes()

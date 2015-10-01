@@ -5,14 +5,10 @@
  *
  * @category    Magendoo
  * @package     Magendoo_Fulltext
- * @author      Emil [carco] Sirbu <emil.sirbu@gmail.com>
  */
 class Magendoo_Fulltext_Model_Resource_Engine extends Mage_CatalogSearch_Model_Resource_Fulltext_Engine
 {
-
-
     protected $_tmpTable  = null;
-
 
     /**
      * Multi add entities data to TEMPORARY fulltext search table
@@ -24,8 +20,6 @@ class Magendoo_Fulltext_Model_Resource_Engine extends Mage_CatalogSearch_Model_R
      */
     public function saveEntityIndexes($storeId, $entityIndexes, $entity = 'product')
     {
-
-
         $data    = array();
         $storeId = (int)$storeId;
         foreach ($entityIndexes as $entityId => $index) {
@@ -45,7 +39,8 @@ class Magendoo_Fulltext_Model_Resource_Engine extends Mage_CatalogSearch_Model_R
     }
 
 
-    public function swapTables() {
+    public function swapTables()
+    {
         $adapter = $this->_getWriteAdapter();
         $mainTable  = $this->getMainTable();
         $prevTable  = $this->getMainTable().'_prev';
@@ -57,7 +52,8 @@ class Magendoo_Fulltext_Model_Resource_Engine extends Mage_CatalogSearch_Model_R
 
 
 
-    public function getTempTable() {
+    public function getTempTable()
+    {
         if(is_null($this->_tmpTable)) {
             $mainTable = $this->getMainTable();
             $this->_tmpTable = $mainTable.'_tmp';
